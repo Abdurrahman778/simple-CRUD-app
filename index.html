@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        
+
+        .container {
+            border: 3px solid #FAE965;
+            width: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;    
+        }
+
+        textarea {
+            columns: black;
+        }
+
+
+
+        body {
+            background-color: #1D1E21;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+        }
+
+        i {
+            cursor: pointer;
+        }
+
+        #posts {
+            background-color: white;
+            color: black;
+            padding-left: 20px;
+            border-radius: 20px;
+            border: 2px solid #FAE965;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To Do App CRUD</h1>
+        
+        <div class="kiri">
+            <form id="form">
+                <label for="post"> Tambah List Disini!</label>
+                <br><br>
+                <textarea name="post" id="input" cols="30" rows="10"></textarea>
+                <br><br>
+                <div id="pesan"></div>
+                <button type="submit">post!</button>
+            </form>
+        </div>
+
+        <div class="kanan">
+            <h3> hal yang harus kamu lakukan</h3>
+            <div id="posts">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
